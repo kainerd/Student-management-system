@@ -1,60 +1,69 @@
-# EduTrack - Student Management System
+# EduTrack — Student Management System
 
-## Setup Instructions
+![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?style=flat&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?style=flat&logo=mysql&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat)
 
-### Requirements
-- XAMPP (or any PHP + MySQL server)
-- PHP 7.4+
-- MySQL 5.7+
-
-### Installation
-
-1. **Copy project folder** to your XAMPP htdocs directory:
-   ```
-   C:/xampp/htdocs/edutrack/
-   ```
-
-2. **Import the database**:
-   - Open phpMyAdmin: http://localhost/phpmyadmin
-   - Click "Import" tab
-   - Select `database.sql` from the project folder
-   - Click "Go"
-
-3. **Configure DB connection** (if needed):
-   - Edit `includes/db.php`
-   - Update `DB_USER` and `DB_PASS` if your MySQL credentials differ
-
-4. **Run the app**:
-   - Visit: http://localhost/edutrack/
+A web-based Student Management System built with PHP, MySQL, HTML, CSS, and JavaScript. EduTrack helps educational institutions manage student records, course subjects, grades, and generate analytical reports — all from a clean, responsive interface.
 
 ---
 
-## File Structure
+## Table of Contents
 
-```
-edutrack/
-├── index.php              # Dashboard
-├── database.sql           # DB setup + sample data
-├── includes/
-│   ├── db.php             # Database connection
-│   ├── header.php         # Nav + HTML head
-│   └── footer.php         # Modal + toast + scripts
-├── pages/
-│   ├── students.php       # Student CRUD
-│   ├── subjects.php       # Subject CRUD
-│   ├── grades.php         # Grade CRUD
-│   └── reports.php        # Analytics
-└── assets/
-    ├── css/style.css      # All styles
-    └── js/main.js         # Modal, toast helpers
-```
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [File Structure](#file-structure)
+- [Security Notes](#security-notes)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Features
-- Dashboard with stats and grade distribution
-- Student management (Add, Edit, Delete, Filter, Search)
-- Subject management (Add, Edit, Delete)
-- Grade management (Add, Edit, Delete, Filter by year/semester)
-- Reports: Top performers, students by status/course, grade stats
-- Modal forms (no page reload for forms)
-- Toast notifications
-- Responsive layout
+
+- **Dashboard** — Overview of key stats and grade distribution charts
+- **Student Management** — Add, edit, delete, filter, and search student records
+- **Subject Management** — Full CRUD operations for course subjects
+- **Grade Management** — Add, edit, delete grades; filter by year and semester
+- **Reports & Analytics** — Top performers, student status breakdown, grade statistics
+- **Modal Forms** — No page reloads; smooth in-page interactions
+- **Toast Notifications** — Real-time feedback on all user actions
+- **Responsive Layout** — Works on desktop and mobile screens
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | PHP 7.4+ |
+| Database | MySQL 5.7+ |
+| Frontend | HTML5, CSS3, JavaScript (Vanilla) |
+| Local Server | XAMPP (Apache + MySQL) |
+
+---
+
+## Requirements
+
+- [XAMPP](https://www.apachefriends.org/) or any Apache + PHP + MySQL stack
+- PHP **7.4** or higher
+- MySQL **5.7** or higher
+- A modern web browser (Chrome, Firefox, Edge)
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kainerd/Student-management-system.git
+```
+
+Or download the ZIP and extract it.
+
+### 2. Move to XAMPP's Web Root
